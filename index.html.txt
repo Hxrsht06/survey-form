@@ -1,0 +1,80 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">
+    A college survey form gathers student feedback on courses, instructors, and campus life.
+  </p>
+
+  <form id="survey-form">
+
+    
+    <label id="name-label" for="name">Name:</label><br>
+    <input 
+      id="name" 
+      type="text" 
+      placeholder="Joe Smith" 
+      required
+    ><br><br>
+
+    
+    <label id="email-label" for="email">Email:</label><br>
+    <input 
+      id="email" 
+      type="email" 
+      placeholder="example@email.com" 
+      required
+    ><br><br>
+
+    
+    <label id="number-label" for="number">Age:</label><br>
+    <input 
+      id="number" 
+      type="number" 
+      min="10" 
+      max="60" 
+      placeholder="Enter your age"
+    ><br><br>
+
+    
+    <label for="dropdown">Your role:</label><br>
+    <select id="dropdown">
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+    </select><br><br>
+
+    
+    <p>Would you recommend this college?</p>
+    <input type="radio" name="recommend" value="yes"> Yes<br>
+    <input type="radio" name="recommend" value="no"> No<br><br>
+
+    
+    <p>What do you like most?</p>
+    <input type="checkbox" value="courses"> Courses<br>
+    <input type="checkbox" value="faculty"> Faculty<br>
+    <input type="checkbox" value="campus"> Campus<br><br>
+
+    
+    <p>Additional comments:</p>
+    <textarea placeholder="Enter your comments here..."></textarea><br><br>
+
+    
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+
+
+** end of index.html **
+
